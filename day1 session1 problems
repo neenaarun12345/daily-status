@@ -1,0 +1,313 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "name": "Untitled6.ipynb",
+      "provenance": [],
+      "authorship_tag": "ABX9TyMcrxZBVyT/fnAEQRUiMEB8",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/neenaarun12345/daily-status/blob/master/day1%20session1%20problems\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "ZV7_eEp4w0jR",
+        "colab_type": "text"
+      },
+      "source": [
+        "Python program to check if the input year is a leap year or not"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "a7DbYTMrwoTR",
+        "colab_type": "code",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 51
+        },
+        "outputId": "361cb7e9-8947-4d40-d7ec-45047ca9bcb3"
+      },
+      "source": [
+        "\n",
+        "\n",
+        "# To get year (integer input) from the user\n",
+        "year = int(input(\"Enter a year: \"))\n",
+        "\n",
+        "if ((year % 4) == 0 and (year % 100)  != 0) or ((year % 400) == 0):\n",
+        "           print(\"{0} is a leap year\".format(year))\n",
+        "else:\n",
+        "           print(\"{0} is not a leap year\".format(year))\n"
+      ],
+      "execution_count": 4,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "Enter a year: 2000\n",
+            "2000 is a leap year\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "pwNEucVjxTbY",
+        "colab_type": "text"
+      },
+      "source": [
+        "Python Program to Generate a Random Number "
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "1s8vpqrwxKqE",
+        "colab_type": "code",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 34
+        },
+        "outputId": "4b694125-1f7c-4464-f9b8-c0771c83a7b8"
+      },
+      "source": [
+        "\n",
+        "\n",
+        "# Program to generate a random number between 0 and 9\n",
+        "# import the random module\n",
+        "import random\n",
+        "print(random.randint(0,9))\n",
+        "  \n",
+        "\n",
+        "\n"
+      ],
+      "execution_count": 5,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "0\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "TXYao9HKwbJR",
+        "colab_type": "text"
+      },
+      "source": [
+        "Python Program to Add Two Numbers getting through key board"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "AgvQhqvawU63",
+        "colab_type": "code",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 68
+        },
+        "outputId": "582f24ab-c9b6-484b-a96a-063cccd1914d"
+      },
+      "source": [
+        "# sum of two nos\n",
+        "num1 = int(input(\"Enter first no\"))\n",
+        "num2 = int(input(\"Enter second no\"))\n",
+        "\n",
+        "# Adding the two numbers\n",
+        "sum = num1 + num2\n",
+        "\n",
+        "# Display the sum\n",
+        "print('The sum of {0} and {1} is {2}'.format(num1, num2, sum))\n",
+        "\n",
+        "\n"
+      ],
+      "execution_count": 1,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "Enter first no2\n",
+            "Enter second no3\n",
+            "The sum of 2 and 3 is 5\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "xcfO1lkUxziU",
+        "colab_type": "text"
+      },
+      "source": [
+        "Python Program to Convert Kilometers to Miles \n"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "mP2CFU60xvhq",
+        "colab_type": "code",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 51
+        },
+        "outputId": "525fa6cd-dda5-4cd4-8df0-b591d987c0be"
+      },
+      "source": [
+        "\n",
+        "# To take kilometers from the user, uncomment the code below\n",
+        "kilometers = int(input(\"Enter value in kilometers\"))\n",
+        "\n",
+        "# conversion factor\n",
+        "conv_fac = 0.621371\n",
+        "\n",
+        "# calculate miles\n",
+        "miles = kilometers * conv_fac\n",
+        "print('%0.3f kilometers is equal to %0.3f miles' %(kilometers,miles))\n"
+      ],
+      "execution_count": 7,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "Enter value in kilometers12\n",
+            "12.000 kilometers is equal to 7.456 miles\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "SQcwiQ4kyBGQ",
+        "colab_type": "text"
+      },
+      "source": [
+        "Python Program to Solve Quadratic Equation \n",
+        "\n"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "pcuDG2AuyE9j",
+        "colab_type": "code",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 85
+        },
+        "outputId": "3d1d9b94-cc3d-4b08-bfec-f2a9f0882ebf"
+      },
+      "source": [
+        "# Solve the quadratic equation ax**2 + bx + c = 0\n",
+        "# importing  complex math module\n",
+        "import cmath\n",
+        "\n",
+        " # To take coefficient input from the users\n",
+        "a = float(input('Enter a: '))\n",
+        "b = float(input('Enter b: '))\n",
+        "c = float(input('Enter c: '))\n",
+        "\n",
+        "# calculate the discriminant\n",
+        "d = (b**2) - (4*a*c)\n",
+        "\n",
+        "# find two solutions\n",
+        "sol1 = (-b-cmath.sqrt(d))/(2*a)\n",
+        "sol2 = (-b+cmath.sqrt(d))/(2*a)\n",
+        "\n",
+        "print('The solution are {0} and {1}'.format(sol1,sol2))\n",
+        "\n"
+      ],
+      "execution_count": 8,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "Enter a: 2\n",
+            "Enter b: 4\n",
+            "Enter c: 6\n",
+            "The solution are (-1-1.4142135623730951j) and (-1+1.4142135623730951j)\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "VrwLfe-JyOFx",
+        "colab_type": "text"
+      },
+      "source": [
+        "Python Program to find prime or not using function \n"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "sOSuo6MeyU-x",
+        "colab_type": "code",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 51
+        },
+        "outputId": "9a4d4719-bac1-435b-e31f-b6cb98010997"
+      },
+      "source": [
+        "def test_prime(n):\n",
+        "    if (n==1):\n",
+        "        return False\n",
+        "    elif (n==2):\n",
+        "        return True;\n",
+        "    else:\n",
+        "        for x in range(2,n):\n",
+        "            if(n % x==0):\n",
+        "                return False\n",
+        "        return True\n",
+        "no=int(input(\"Enter the number\"))\n",
+        "if (test_prime(no)) is True :\n",
+        "    print(\" {0} is a prime no\".format(no))\n",
+        "else:\n",
+        "     print(\" {0} is not a prime no\".format(no))\n"
+      ],
+      "execution_count": 9,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "Enter the number12\n",
+            " 12 is not a prime no\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    }
+  ]
+}
