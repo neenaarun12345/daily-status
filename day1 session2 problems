@@ -1,0 +1,509 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "name": "Untitled7.ipynb",
+      "provenance": [],
+      "authorship_tag": "ABX9TyPsbWD9C4LSmcJceStkDqgI",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/neenaarun12345/daily-status/blob/master/day1%20session2%20problems\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "HG-LVEVB3YgU",
+        "colab_type": "text"
+      },
+      "source": [
+        "Python Program to find the factorial of a number using loop. \n",
+        "\n"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "5V7v1jPk3WE4",
+        "colab_type": "code",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 68
+        },
+        "outputId": "c50e1a87-b8c5-4804-87ba-40b334b0eec9"
+      },
+      "source": [
+        "n=int(input(\"Enter number:\"))\n",
+        "fact=1\n",
+        "\n",
+        "while(n>0):\n",
+        "    fact=fact*n\n",
+        "    n=n-1\n",
+        "print(\"Factorial of the number is: \")\n",
+        "print(fact)\n"
+      ],
+      "execution_count": 1,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "Enter number:2\n",
+            "Factorial of the number is: \n",
+            "2\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "ymLSQKMf4A0r",
+        "colab_type": "text"
+      },
+      "source": [
+        "Python Program to reverse a number using loop \n",
+        "\n",
+        "\n"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "YmxDYx0f4KSr",
+        "colab_type": "code",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 68
+        },
+        "outputId": "b28ed44d-b782-460e-8c5e-c59da0881858"
+      },
+      "source": [
+        "r=0\n",
+        "n=int(input(\"Enter a number: \"))\n",
+        "while(n>0):\n",
+        "    dig=n%10\n",
+        "    r=r*10+dig\n",
+        "    n=n//10\n",
+        "print(\"The reversed no  is:\")\n",
+        "print(r)"
+      ],
+      "execution_count": 2,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "Enter a number: 2345\n",
+            "The reversed no  is:\n",
+            "5432\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "mHUxAovL4RUF",
+        "colab_type": "text"
+      },
+      "source": [
+        "Write a Python program to construct the following pattern, using a nested for loop.\n",
+        "* \n",
+        "* * \n",
+        "* * * \n",
+        "* * * * \n",
+        "* * * * * \n",
+        "* * * * \n",
+        "* * * \n",
+        "* * \n",
+        "*\n"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "kHH5d_194Un6",
+        "colab_type": "code",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 187
+        },
+        "outputId": "495108ac-6d95-4b95-ce45-c29e8ffb2623"
+      },
+      "source": [
+        "n=5;\n",
+        "for i in range(n):\n",
+        "    for j in range(i):\n",
+        "        print ('* ', end=\"\")\n",
+        "    print('')\n",
+        "\n",
+        "for i in range(n,0,-1):\n",
+        "    for j in range(i):\n",
+        "        print('* ', end=\"\")\n",
+        "    print('')\n"
+      ],
+      "execution_count": 3,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "\n",
+            "* \n",
+            "* * \n",
+            "* * * \n",
+            "* * * * \n",
+            "* * * * * \n",
+            "* * * * \n",
+            "* * * \n",
+            "* * \n",
+            "* \n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "UwC6sCpQ4cZ1",
+        "colab_type": "text"
+      },
+      "source": [
+        "Python Program to replace all occurrences of ‘a’ with ‘$’ in a string. \n",
+        "\n"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "eJ5OPmp-4hm2",
+        "colab_type": "code",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 68
+        },
+        "outputId": "db54d747-4d04-4056-85c6-601ba81b74cb"
+      },
+      "source": [
+        "string=input(\"Enter string:\")\n",
+        "string=string.replace('a','$')\n",
+        "string=string.replace('A','$')\n",
+        "print(\"Modified string:\")\n",
+        "print(string)\n"
+      ],
+      "execution_count": 4,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "Enter string:HIII\n",
+            "Modified string:\n",
+            "HIII\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "vF0iovkS4wYI",
+        "colab_type": "text"
+      },
+      "source": [
+        "Python Program to remove the nth index character from a non-empty string. \n",
+        "\n"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "hABNNbld4zu-",
+        "colab_type": "code",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 85
+        },
+        "outputId": "00865769-b9a4-4f48-b4df-3fc8073e74b3"
+      },
+      "source": [
+        "def remove(string, n):  \n",
+        "      first = string[:n]   \n",
+        "      last = string[n+1:]  \n",
+        "      return first + last\n",
+        "string=input(\"Enter the string:\")\n",
+        "n=int(input(\"Enter the index of the character to remove:\"))\n",
+        "print(\"Modified string:\")\n",
+        "print(remove(string, n))"
+      ],
+      "execution_count": 6,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "Enter the string:im nagashree\n",
+            "Enter the index of the character to remove:3\n",
+            "Modified string:\n",
+            "im agashree\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "_PnZfXDQ5FFu",
+        "colab_type": "text"
+      },
+      "source": [
+        "Python Program to detect if two strings are anagrams. \n"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "Kb6Gh0AO5I6s",
+        "colab_type": "code",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 68
+        },
+        "outputId": "3d85985f-8d9d-4178-9345-dddcb27b9415"
+      },
+      "source": [
+        "s1=input(\"Enter first string:\")\n",
+        "s2=input(\"Enter second string:\")\n",
+        "if(sorted(s1)==sorted(s2)):\n",
+        "      print(\"The strings are anagrams.\")\n",
+        "else:\n",
+        "      print(\"The strings aren't anagrams.\")\n"
+      ],
+      "execution_count": 9,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "Enter first string:nest\n",
+            "Enter second string:nest\n",
+            "The strings are anagrams.\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "6Y58iPgZ5inE",
+        "colab_type": "text"
+      },
+      "source": [
+        "Python Program to form a string where the first character and the last character have been exchanged. \n",
+        "\n"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "4ujx6fDB5lCl",
+        "colab_type": "code",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 68
+        },
+        "outputId": "2832777f-10cd-474e-806e-e77cbbaae463"
+      },
+      "source": [
+        "def change(string):\n",
+        "      return string[-1:] + string[1:-1] + string[:1]\n",
+        "string=input(\"Enter string:\")\n",
+        "print(\"Modified string:\")\n",
+        "print(change(string))"
+      ],
+      "execution_count": 10,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "Enter string:teena\n",
+            "Modified string:\n",
+            "aeent\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "LGls2eZu5_UD",
+        "colab_type": "text"
+      },
+      "source": [
+        "Python Program to  count number of vowels from a non-empty string. \n"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "1wC5uYn16B36",
+        "colab_type": "code",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 68
+        },
+        "outputId": "fdc6d8f3-8285-4982-9886-fb0b5ea6fe91"
+      },
+      "source": [
+        "string=input(\"Enter string:\")\n",
+        "vowels=0\n",
+        "for i in string:\n",
+        "      if(i=='a' or i=='e' or i=='i' or i=='o' or i=='u' or i=='A' or i=='E' or i=='I' or i=='O' or i=='U'):\n",
+        "            vowels=vowels+1\n",
+        "print(\"Number of vowels are:\")\n",
+        "print(vowels)\n"
+      ],
+      "execution_count": 11,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "Enter string:teena singh\n",
+            "Number of vowels are:\n",
+            "4\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "0m6135ik6ZfD",
+        "colab_type": "text"
+      },
+      "source": [
+        "Program for Divide by zero error detection\n",
+        "\n",
+        "\n"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "JUOGJ97X6dcP",
+        "colab_type": "code",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 170
+        },
+        "outputId": "5317aa69-3488-4a2d-92b9-610ccaa1c690"
+      },
+      "source": [
+        "flag = True\n",
+        "\n",
+        "def div(a, b):  \n",
+        "       try:\n",
+        "            print(\"Finally the division of %d/%d is %f\" % (a, b,a/b))\n",
+        "            global flag\n",
+        "            flag=False\n",
+        "       except ZeroDivisionError:\n",
+        "            print(\"Zero Division Error detected\")\n",
+        "       else:\n",
+        "            print(\"Division is successful\") \n",
+        "       finally:\n",
+        "            if flag is True:\n",
+        "               print(\"Try again\")     \n",
+        "            else:\n",
+        "               print(\"Thank you\")\n",
+        "       \n",
+        "#global flag\n",
+        "\n",
+        "while flag is True:\n",
+        "    div(int(input(\"Enter numerator\")),int(input(\"Enter denominator\")))"
+      ],
+      "execution_count": 12,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "Enter numerator6\n",
+            "Enter denominator0\n",
+            "Zero Division Error detected\n",
+            "Try again\n",
+            "Enter numerator6\n",
+            "Enter denominator8\n",
+            "Finally the division of 6/8 is 0.750000\n",
+            "Division is successful\n",
+            "Thank you\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "8qJJZ9S37EfI",
+        "colab_type": "text"
+      },
+      "source": [
+        "Program for ValueError error detection\n",
+        "\n",
+        "\n",
+        "\n",
+        "\n"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "I1rKrpEa7HQ7",
+        "colab_type": "code",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 85
+        },
+        "outputId": "d3142318-4d5c-40bc-f928-ff620c0331b7"
+      },
+      "source": [
+        "while True:\n",
+        "     try:\n",
+        "         x = int(input(\"Please enter a number: \"))\n",
+        "         print(\" That was valid number. Thank you\")\n",
+        "         break\n",
+        "     except ValueError:\n",
+        "         print(\"Oops!  That was no valid number.  Try again...\")\n"
+      ],
+      "execution_count": 13,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "Please enter a number: d\n",
+            "Oops!  That was no valid number.  Try again...\n",
+            "Please enter a number: 3\n",
+            " That was valid number. Thank you\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    }
+  ]
+}
