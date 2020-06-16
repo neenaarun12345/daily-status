@@ -1,0 +1,415 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "name": "Untitled10.ipynb",
+      "provenance": [],
+      "authorship_tag": "ABX9TyOBfSo2LZhx9ieXRw42+8X1",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/neenaarun12345/daily-status/blob/master/day2%20session2%20problems\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "RLnr-pu4DzmO",
+        "colab_type": "text"
+      },
+      "source": [
+        "Removes all elements of dictionary dict"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "TPYwW7o7Dpgj",
+        "colab_type": "code",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 51
+        },
+        "outputId": "77938b0e-df19-4b8e-e2c7-52c42890e337"
+      },
+      "source": [
+        "\n",
+        "\n",
+        "dict = {'Name': 'Zara', 'Age': 7};\n",
+        "print(\"Start Len : %d\" %  len(dict))\n",
+        "dict.clear()\n",
+        "print(\"End Len : %d\" %  len(dict))\n",
+        "\n"
+      ],
+      "execution_count": 1,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "Start Len : 2\n",
+            "End Len : 0\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "7jcJ9er2D_Yi",
+        "colab_type": "text"
+      },
+      "source": [
+        "Returns a list of dict's (key, value) tuple pairs\n",
+        "\n",
+        "\n",
+        "\n"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "ckd2ZNX-ECsy",
+        "colab_type": "code",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 34
+        },
+        "outputId": "891e51e6-e484-40f7-bdb4-90ab21a530cf"
+      },
+      "source": [
+        "dict = {'Name': 'Zara', 'Age': 7}\n",
+        "print (\"Value : %s\" %  dict.items())"
+      ],
+      "execution_count": 2,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "Value : dict_items([('Name', 'Zara'), ('Age', 7)])\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "KKZTaxdJEFUy",
+        "colab_type": "text"
+      },
+      "source": [
+        " dict.copy()\n",
+        "Returns a copy of dictionary dict\n",
+        "\n",
+        "\n"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "TxhZMBsHENi1",
+        "colab_type": "code",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 34
+        },
+        "outputId": "335d1bea-5669-42e3-b52a-eb5cf7b5910e"
+      },
+      "source": [
+        "dict1 = {'Name': 'Zara', 'Age': 7};\n",
+        "dict2 = dict1.copy()\n",
+        "print (\"New Dictinary : %s\" %  str(dict2))"
+      ],
+      "execution_count": 3,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "New Dictinary : {'Name': 'Zara', 'Age': 7}\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "zbH8C6woES2V",
+        "colab_type": "text"
+      },
+      "source": [
+        "Python Program to Generate a Dictionary that Contains Numbers (between 1 and n) in the Form (x,x*x). \n",
+        "\n"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "zvTLCKNfEVeg",
+        "colab_type": "code",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 51
+        },
+        "outputId": "9c84261c-c2fb-436f-e185-b7a54451b3b6"
+      },
+      "source": [
+        "n=int(input(\"Enter a number:\"))\n",
+        "d={x:x*x for x in range(1,n+1)}\n",
+        "print(d)"
+      ],
+      "execution_count": 4,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "Enter a number:2\n",
+            "{1: 1, 2: 4}\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "z82Z88P3EdoL",
+        "colab_type": "text"
+      },
+      "source": [
+        "Python Program to Sum All the Items in a Dictionary \n",
+        "\n"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "pohHlX0GEhJ6",
+        "colab_type": "code",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 51
+        },
+        "outputId": "46988524-9e39-4872-dbcf-259340041ce1"
+      },
+      "source": [
+        "d={'A':100,'B':540,'C':239}\n",
+        "print(\"Total sum of values in the dictionary:\")\n",
+        "print(sum(d.values()))"
+      ],
+      "execution_count": 5,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "Total sum of values in the dictionary:\n",
+            "879\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "oALUhvJ1ElvH",
+        "colab_type": "text"
+      },
+      "source": [
+        "Python Program to Remove the Given Key from a Dictionary \n",
+        "\n"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "dcLs06abEnyZ",
+        "colab_type": "code",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 102
+        },
+        "outputId": "57a78e60-f602-4635-fec0-d082dfb5ace4"
+      },
+      "source": [
+        "d = {'a':1,'b':2,'c':3,'d':4}\n",
+        "print(\"Initial dictionary\")\n",
+        "print(d)\n",
+        "key=input(\"Enter the key to delete(a-d):\")\n",
+        "if key in d: \n",
+        "    del d[key]\n",
+        "else:\n",
+        "    print(\"Key not found!\")\n",
+        "    exit(0)\n",
+        "print(\"Updated dictionary\")\n",
+        "print(d)\n"
+      ],
+      "execution_count": 6,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "Initial dictionary\n",
+            "{'a': 1, 'b': 2, 'c': 3, 'd': 4}\n",
+            "Enter the key to delete(a-d):b\n",
+            "Updated dictionary\n",
+            "{'a': 1, 'c': 3, 'd': 4}\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "Mr_3oM3bE2Ww",
+        "colab_type": "text"
+      },
+      "source": [
+        "Python Program to add name and mark as key->value pair in  a Dictionary and print it.\n",
+        "\n"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "NVLnJl1HE5XU",
+        "colab_type": "code",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 85
+        },
+        "outputId": "cc42bfb2-9198-40cf-c9f2-a0782e2ab15c"
+      },
+      "source": [
+        "n=int(input(\"Enter no of records\"))\n",
+        "d={}\n",
+        "for i in range(1,n+1):\n",
+        "    name= input(\"Enter name %d\"%(i))\n",
+        "    mark=int(input(\"Enter mark %d\"%(i)))\n",
+        "    d[name]=mark\n",
+        "    print (d)"
+      ],
+      "execution_count": 8,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "Enter no of records1\n",
+            "Enter name 1neena\n",
+            "Enter mark 12\n",
+            "{'neena': 2}\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "8tYV_HPsFk-N",
+        "colab_type": "text"
+      },
+      "source": [
+        "Python program to convert 2 digit number   into words\n",
+        "\n",
+        "\n"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "1wS4HJYpFnSq",
+        "colab_type": "code",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 51
+        },
+        "outputId": "1fe4fd2e-adab-4a9e-af96-b8efa2561790"
+      },
+      "source": [
+        "d={0:'',1:'one',2:'two',3:'three',4:'four',5:'five',6:'six',7:'seven',8:'eight',9:'nine',\\\n",
+        "   10:'ten',11:'eleven',12:'twelve',13:'thirteen',14:'fourteen',15:'fifteen',16:'sixteen',\\\n",
+        "   17:'seventeen',18:'eightteen',19:'nineteen',20:'twenty',30:'thirty',40:'fourty',50:'fifty',\\\n",
+        "   60:'sixty',70:'seventy',80:'eighty',90:'ninty'}\n",
+        "\n",
+        "num=int(input(\"Enter the integer between 1 to 99:\"))\n",
+        "if (num<=20):\n",
+        "      print(d[num])\n",
+        "if(num>20 and num<100):\n",
+        "        if num%10==0:       \n",
+        "            print(d[num])\n",
+        "        else:\n",
+        "            print(d[num//10*10]+\" \"+d[num%10])\n"
+      ],
+      "execution_count": 14,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "Enter the integer between 1 to 99:45\n",
+            "fourty five\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "AaxDYnBKFuoA",
+        "colab_type": "text"
+      },
+      "source": [
+        "How to sort a dictionary by values in Python\n",
+        "\n"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "QA9lsQb7Fxig",
+        "colab_type": "code",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 51
+        },
+        "outputId": "85f81154-e5f0-4c98-d12b-10dc80d16598"
+      },
+      "source": [
+        "d = {\"Pierre\": 42, \"Anne\": 33, \"Zoe\": 24}\n",
+        "#Use the sorted function and operator module\n",
+        "import operator\n",
+        "sorted_d = sorted(d.items(), key=operator.itemgetter(1))\n",
+        "print(sorted_d)\n",
+        "sorted_a= sorted(d.items(), key=operator.itemgetter(1),reverse=True)\n",
+        "print(sorted_a)\n"
+      ],
+      "execution_count": 15,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "[('Zoe', 24), ('Anne', 33), ('Pierre', 42)]\n",
+            "[('Pierre', 42), ('Anne', 33), ('Zoe', 24)]\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    }
+  ]
+}
