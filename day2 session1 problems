@@ -1,0 +1,510 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "name": "Untitled8.ipynb",
+      "provenance": [],
+      "authorship_tag": "ABX9TyPDgtF4TrQ1H6ub6hdPfjd2",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/neenaarun12345/daily-status/blob/master/day2%20session1%20problems\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "RMmacEYf3S8Y",
+        "colab_type": "text"
+      },
+      "source": [
+        "Program to find the largest number in a list.\n"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "GCXAZ4Ow3RLX",
+        "colab_type": "code",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 136
+        },
+        "outputId": "fa6e5d2f-0dfb-427c-ae0a-fd3d8a17919f"
+      },
+      "source": [
+        "x=0\n",
+        "print('The greatest no is',max([int(input(x)) for i in range(int(input(\"Enter n\")))]))\n"
+      ],
+      "execution_count": 2,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "Enter n5\n",
+            "0\n",
+            "1\n",
+            "2\n",
+            "3\n",
+            "4\n",
+            "The greatest no is 4\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "Lbpzm9rW4Jh6",
+        "colab_type": "text"
+      },
+      "source": [
+        "\n",
+        "Python Program to put the even and odd elements in a list into two different lists. \n",
+        "\n"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "gbeZMb7t4P8E",
+        "colab_type": "code",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 119
+        },
+        "outputId": "9dc8e928-6526-4ac8-acdc-18750c84f92c"
+      },
+      "source": [
+        "a=[]\n",
+        "n=int(input(\"Enter number of elements:\"))\n",
+        "for i in range(1,n+1):\n",
+        "    b=int(input(\"Enter element:\"))\n",
+        "    a.append(b)\n",
+        "even=[]\n",
+        "odd=[]\n",
+        "for j in a:\n",
+        "    if(j%2==0):\n",
+        "        even.append(j)\n",
+        "    else:\n",
+        "        odd.append(j)\n",
+        "print(\"The even list\",even)\n",
+        "print(\"The odd list\",odd)"
+      ],
+      "execution_count": 3,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "Enter number of elements:3\n",
+            "Enter element:1\n",
+            "Enter element:2\n",
+            "Enter element:3\n",
+            "The even list [2]\n",
+            "The odd list [1, 3]\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "FELYQp6P4bOI",
+        "colab_type": "text"
+      },
+      "source": [
+        "Python Program to merge two lists and sort it.\n",
+        "\n"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "xSYeWPDx4hIw",
+        "colab_type": "code",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 204
+        },
+        "outputId": "50fdccdc-2b09-4ac9-84c8-e75160bbaef0"
+      },
+      "source": [
+        "a=[]\n",
+        "c=[]\n",
+        "n1=int(input(\"Enter number of elements:\"))\n",
+        "for i in range(1,n1+1):\n",
+        "    b=int(input(\"Enter element:\"))\n",
+        "    a.append(b)\n",
+        "n2=int(input(\"Enter number of elements:\"))\n",
+        "for i in range(1,n2+1):\n",
+        "    d=int(input(\"Enter element:\"))\n",
+        "    c.append(d)\n",
+        "new=a+c\n",
+        "new.sort()\n",
+        "print(\"Sorted list is:\",new)"
+      ],
+      "execution_count": 6,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "Enter number of elements:4\n",
+            "Enter element:1\n",
+            "Enter element:2\n",
+            "Enter element:3\n",
+            "Enter element:4\n",
+            "Enter number of elements:4\n",
+            "Enter element:6\n",
+            "Enter element:7\n",
+            "Enter element:8\n",
+            "Enter element:9\n",
+            "Sorted list is: [1, 2, 3, 4, 6, 7, 8, 9]\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "IIqUdSrU45QV",
+        "colab_type": "text"
+      },
+      "source": [
+        "Python Program to sort the list according to the second element in the sublist.\n",
+        "\n"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "v-S-3BtL472t",
+        "colab_type": "code",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 34
+        },
+        "outputId": "819e5086-8cfb-4445-b880-bc280b347d6b"
+      },
+      "source": [
+        "a=[['A',34],['B',21],['C',26],['E',29]]\n",
+        "for i in range(0,len(a)):\n",
+        "    for j in range(i+1,len(a)):\n",
+        "        if(a[i][1]>a[j][1]):\n",
+        "            temp=a[j]\n",
+        "            a[j]=a[i]\n",
+        "            a[i]=temp\n",
+        " \n",
+        "print(a)\n"
+      ],
+      "execution_count": 7,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "[['B', 21], ['C', 26], ['E', 29], ['A', 34]]\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "tzJCXwN54_lB",
+        "colab_type": "text"
+      },
+      "source": [
+        "Python Program to find the second largest number in a list using bubble sort. \n",
+        "\n",
+        "\n"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "zXXiYj7O5FAy",
+        "colab_type": "code",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 85
+        },
+        "outputId": "77cde98b-a9e5-4c12-96ad-8f3fdb9af660"
+      },
+      "source": [
+        "a=[]\n",
+        "n=int(input(\"Enter number of elements:\"))\n",
+        "for i in range(1,n+1):\n",
+        "    b=int(input(\"Enter element:\"))\n",
+        "    a.append(b)\n",
+        "for i in range(0,len(a)):\n",
+        "    for j in range(0,len(a)-i-1):\n",
+        "        if(a[j]>a[j+1]):\n",
+        "            temp=a[j]\n",
+        "            a[j]=a[j+1]\n",
+        "            a[j+1]=temp \n",
+        "print('Second largest number is:',a[n-2])"
+      ],
+      "execution_count": 8,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "Enter number of elements:2\n",
+            "Enter element:1\n",
+            "Enter element:5\n",
+            "Second largest number is: 1\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "6YdKepCu5bVz",
+        "colab_type": "text"
+      },
+      "source": [
+        "Program to create a list of tuples with the first element as the number and the \n"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "RFq96qG35edJ",
+        "colab_type": "code",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 88
+        },
+        "outputId": "8c947eb0-ead9-403f-8477-9b2d460edc50"
+      },
+      "source": [
+        " \n",
+        "l_range=int(input(\"Enter the lower range:\"))\n",
+        "u_range=int(input(\"Enter the upper range:\"))\n",
+        "a=[(x,x**2) for x in range(l_range,u_range+1)]\n",
+        "print(a)"
+      ],
+      "execution_count": 10,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "Enter the lower range:23\n",
+            "Enter the upper range:45\n",
+            "[(23, 529), (24, 576), (25, 625), (26, 676), (27, 729), (28, 784), (29, 841), (30, 900), (31, 961), (32, 1024), (33, 1089), (34, 1156), (35, 1225), (36, 1296), (37, 1369), (38, 1444), (39, 1521), (40, 1600), (41, 1681), (42, 1764), (43, 1849), (44, 1936), (45, 2025)]\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "ZlMwE4Sp5sUO",
+        "colab_type": "text"
+      },
+      "source": [
+        "Python Program to generate random numbers from 1 to 20 and append them to the list.\n",
+        "\n"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "vH4mxaMb5uwA",
+        "colab_type": "code",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 51
+        },
+        "outputId": "cc01f82e-d8a6-4abf-deff-0d6f102a628b"
+      },
+      "source": [
+        "import random\n",
+        "a=[]\n",
+        "n=int(input(\"Enter number of elements:\"))\n",
+        "for j in range(n):\n",
+        "    a.append(random.randint(1,20))\n",
+        "print('Randomised list is: ',a)\n"
+      ],
+      "execution_count": 11,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "Enter number of elements:2\n",
+            "Randomised list is:  [1, 5]\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "LDnnQPeu53Mr",
+        "colab_type": "text"
+      },
+      "source": [
+        "Write python program to have a list of words  to sort them from longest to shortest using list of tuples\n",
+        " \n",
+        "\n"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "vgcv9x9m55lP",
+        "colab_type": "code",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 34
+        },
+        "outputId": "2bfc2bc8-7228-4ce3-8268-2e1dc7964e58"
+      },
+      "source": [
+        "txt = 'but soft what light in yonder window breaks'\n",
+        "words = txt.split()\n",
+        "t = list()\n",
+        "for word in words:\n",
+        "   t.append((len(word), word))\n",
+        "t.sort(reverse=True)\n",
+        "\n",
+        "res = list()\n",
+        "for length, word in t:\n",
+        "    res.append(word)\n",
+        "\n",
+        "print(res)"
+      ],
+      "execution_count": 12,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "['yonder', 'window', 'breaks', 'light', 'what', 'soft', 'but', 'in']\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "vxcTR3_z5_WK",
+        "colab_type": "text"
+      },
+      "source": [
+        "Python program that assigns variables\n",
+        "\n",
+        "\n"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "82ugMqp36DCK",
+        "colab_type": "code",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 51
+        },
+        "outputId": "e18c3bb7-0ef2-4e1b-f91f-6bb6a5a39edf"
+      },
+      "source": [
+        "# Create packed tuple.\n",
+        "pair = (\"dog\", \"cat\")\n",
+        "\n",
+        "# Unpack tuple.\n",
+        "(key, value) = pair\n",
+        "\n",
+        "# Display unpacked variables.\n",
+        "print(key)\n",
+        "print(value)"
+      ],
+      "execution_count": 13,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "dog\n",
+            "cat\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "UAbzJj-R6JTS",
+        "colab_type": "text"
+      },
+      "source": [
+        "Python program that searches tuples\n",
+        "\n"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "XK-Dms-C6MPx",
+        "colab_type": "code",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 51
+        },
+        "outputId": "6000fcb5-dcba-4989-e82a-badf9f33ff63"
+      },
+      "source": [
+        "pair = (\"dog\", \"cat\")\n",
+        "\n",
+        "# Search for a value.\n",
+        "if \"cat\" in pair:\n",
+        "    print(\"Cat found\")\n",
+        "\n",
+        "# Search for a value not present.\n",
+        "if \"bird\" not in pair:\n",
+        "    print(\"Bird not found\")\n"
+      ],
+      "execution_count": 14,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "Cat found\n",
+            "Bird not found\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "O14nckVy6QUJ",
+        "colab_type": "text"
+      },
+      "source": [
+        ""
+      ]
+    }
+  ]
+}
